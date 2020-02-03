@@ -321,6 +321,7 @@ void SecurityStats<S, P, Q, W, T>::printStats()
 		dataList.push_back(myStringConverter<S>::to_string_converter(element.first));
 		dataList.push_back(myStringConverter<T>::to_string_converter(secptr->max_time_gap));
 		dataList.push_back(myStringConverter<Q>::to_string_converter(secptr->total_volume));
+		dataList.push_back(myStringConverter<W>::to_string_converter(wap));
 		dataList.push_back(myStringConverter<P>::to_string_converter(secptr->max_trade_price));
 		if (output_writer->putData(dataList))
 			counter++;
